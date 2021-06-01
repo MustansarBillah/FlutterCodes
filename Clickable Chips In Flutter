@@ -1,0 +1,35 @@
+class MyChip extends StatelessWidget {
+  final Text maintext, labeltext;
+  final Function onPress;
+  const MyChip({Key key, this.maintext, this.labeltext, this.onPress})
+      : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Wrap(
+        children: [
+          ActionChip(
+            avatar: CircleAvatar(
+              backgroundColor: Colors.grey.shade800,
+              child: maintext,
+            ),
+            label: labeltext,
+            onPressed: () {
+              onPress();
+            },
+          ),
+          SizedBox(
+            width: 10,
+          )
+        ],
+      ),
+    );
+  }
+}
+
+//Then call This Class In Your Main Function e.g 
+
+void main()
+{
+runApp(MyChip());
+}
