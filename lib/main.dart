@@ -7,7 +7,7 @@ import 'package:webview_flutter/webview_flutter.dart';
 void main() => runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     theme: ThemeData(
-      primaryColor: Color(0xffbb0707),
+      primaryColor: Color(0xff94bb07),
       scaffoldBackgroundColor: Colors.grey, //(0xFF0AA2DE),
     ),
     home: WebViewExample()));
@@ -35,7 +35,7 @@ class _WebViewExampleState extends State<WebViewExample> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Cynema TV'),
+        title: const Text('CynemaTV'),
         // This drop down menu demonstrates that Flutter widgets can be shown over the web view.
         actions: <Widget>[
           NavigationControls(_controller.future),
