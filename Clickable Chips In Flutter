@@ -31,5 +31,16 @@ class MyChip extends StatelessWidget {
 
 void main()
 {
-runApp(MyChip());
+runApp(MyChip(
+                          maintext: Text("T"),
+                          labeltext: Text("Top Courses"),
+                          onPress: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => TopCourses()),
+                            );
+                          },
+                        ),
+                        );
 }
