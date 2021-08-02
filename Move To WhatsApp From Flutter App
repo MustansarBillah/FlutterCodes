@@ -1,0 +1,8 @@
+Paste This Dependecy In pubspec.yaml
+flutter_open_whatsapp: ^0.1.2
+
+Then Use This Code In Any Button From Where You want To Move In WhatsApp
+
+                onPressed: () {
+                  FlutterOpenWhatsapp.sendSingleMessage("92304456789", " ");
+                },
