@@ -1,0 +1,11 @@
+Paste This Dependency In Your pubspec.yaml file
+
+flutter_phone_direct_caller: ^2.0.0
+
+run Pub get 
+
+Then Paste This Code In any Of your Button
+
+ onPressed: () async {
+                  FlutterPhoneDirectCaller.callNumber(_numberCtrl.text);
+                },
